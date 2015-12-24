@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "name": "index.html",
+      "type": "html",
+      "path": "app/index.html",
+      "value": 3
+    },
+    {
+      "name": "main.js",
+      "type": "js",
+      "path": "app/js/main.js",
+      "value": 2
+    }
+  ],
+  "links": [
+    { "source": 0, "target": 1 }
+  ],
+  "colors": {
+    "domain": ["html", "js"],
+    "range": ["#c9d1dc", "#29b9d6"]
+  }
+}
