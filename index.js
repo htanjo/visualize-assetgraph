@@ -6,6 +6,7 @@ var AssetGraph = require('assetgraph');
 new AssetGraph({root: 'www'})
   .loadAssets('**/*.html')
   .populate({followRelations: {type: AssetGraph.query.not(['HtmlAnchor'])}})
+  // .removeRelations({type: ['HtmlAnchor']})
   .writeStatsToStderr()
   .drawGraph('dist/assetgraph.svg')
   .run(function (err, assetGraph) {
